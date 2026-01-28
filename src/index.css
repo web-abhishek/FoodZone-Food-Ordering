@@ -1,0 +1,166 @@
+@import "tailwindcss";
+
+/* * {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Quicksand', sans-serif;
+  font-size: 16px;
+}
+.max-w-7xl mx-auto px-4 flex justify-between {
+  width: 1320px;
+  margin: 0px auto;
+} */
+/* header {
+  border-bottom: 1px solid #0000002f;
+}
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .logo img {
+  width: 130px;
+  height: auto;
+  cursor: pointer;
+}
+header ul {
+  display: flex;
+}
+header ul li {
+  list-style-type: none;
+  padding: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+.searchbar {
+  margin: 50px;
+  display: flex;
+  align-items: center;
+}
+.searchbar input {
+  width: 80%;
+  margin-right: 10px;
+  padding: 20px 10px;
+  border: 1px solid #0000002f;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+.btn-prime {
+  padding: 20px 15px;
+  background-color: red;
+  color: white;
+  font-size: 18px;
+  border: none;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  cursor: pointer;
+}
+
+.all-products {
+  margin: 50px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+.product {
+  box-shadow: rgba(28, 28, 28, 0.12) 0px 0.4rem 1.8rem;
+  padding: 10px;
+  height: 100%;
+  width: 320px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+.prod-details {
+  padding: 30px 20px;
+}
+.prod-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.prod-name {
+  line-height: 1.2;
+  font-weight: 500;
+  text-align: left;
+  font-size: 1.7rem;
+  margin: 0.8rem 0px 0.6rem;
+  color: rgb(28, 28, 28);
+}
+.prod-cuisine-info {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 25px;
+  flex-direction: column;
+}
+.prod-cuisine {
+  line-height: 1.2;
+  font-weight: 400;
+  text-align: left;
+  font-size: 1.1rem;
+  margin: 0.8rem 0px 0.6rem;
+  color: rgb(28, 28, 28);
+  overflow: hidden;
+  line-break: anywhere;
+}
+
+.shimmer-max-w-7xl mx-auto px-4 flex justify-between {
+  margin: 50px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+.shimmer-cards {
+  padding: 20px;
+  height: auto;
+  width: 300px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  background: #e7e7e7;
+}
+.prod-img img{
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.resMenu{
+  box-shadow: 1px 1px 10px #0000002f;
+  padding: 40px 30px;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 10px;
+  margin-top: 30px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.resMenu>div{
+  display: flex;
+  align-items: center;
+  gap: 30px;
+} */
