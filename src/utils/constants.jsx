@@ -9,8 +9,8 @@ export const FET_URL =
 // export const MENU_URL  = `${process.env.REACT_FOODFIRE_APP_BASE_URL}menu?page-type=REGULAR_MENU&complete-menu=true&lat=21.1702401&lng=72.83106070000001&submitAction=ENTER&restaurantId=`;
 
 // Restaurant lists
-export const REST_LIST = "https://namastedev.com/api/v1/listRestaurants";
+export const REST_LIST = "https://corsproxy.io/https://namastedev.com/api/v1/listRestaurants";
 
 // Menu lists of restaurants
-export const REST_MENU_LIST = "https://namastedev.com/api/v1/listRestaurantMenu/";
+export const REST_MENU_LIST = "https://corsproxy.io/https://namastedev.com/api/v1/listRestaurantMenu/";
 export const REST_MENU_LIST_IMG = "RX_THUMBNAIL/IMAGES/VENDOR/2025/6/17/"
