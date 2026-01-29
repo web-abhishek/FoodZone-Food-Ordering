@@ -53,7 +53,7 @@ const RestaurantsMenu = () => {
   // console.log(categories);
 
   return (
-    <div className="max-w-7xl mx-auto px-4 flex justify-between">
+    <div className="px-4 flex justify-between">
       <div className="resMenu">
         <div className="restaurent_name">{name}</div>
         <div className="restaurent_rating">{avgRating} ⭐</div>

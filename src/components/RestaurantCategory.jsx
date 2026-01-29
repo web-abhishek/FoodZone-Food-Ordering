@@ -12,7 +12,7 @@ const RestaurantCategory = ({ data, showmenu, setShowmenui }) => {
     }
     
   return (
-    <div className="max-w-7xl mx-auto px-4 flex justify-between">
+    <div className="px-4 flex justify-between">
       <div className="resMenu" style={{cursor:"pointer"}} onClick={handleClick}>
         <div>
           <span>

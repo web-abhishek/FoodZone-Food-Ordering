@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import logo from "../assets/logo.jpg";
+import foodzoneLogo from "../assets/foodzone-logo.png";
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
 const Navbar = () => {
@@ -14,11 +14,9 @@ const Navbar = () => {
   }, []);
 
   return (
-    <header>
-      <div className="max-w-7xl mx-auto px-4 flex justify-between">
-        <nav className="w-full flex items-center justify-between">
+    <nav className="w-full flex items-center justify-between py-4">
           <div className="logo">
-            <Link to="/"><img src={logo} alt="" className="w-30"/></Link>
+            <Link to="/"><img src={foodzoneLogo} alt="" className="w-26 h-auto"/></Link>
           </div>
           <div className="flex items-center justify-between">
             <ul className="flex items-center justify-end text-md">
@@ -37,7 +35,6 @@ const Navbar = () => {
             <li className="p-3 hover:text-red-400 transition ease-in-out delay-100">
               <Link to="/contact">Contact Us</Link>
             </li>
-            
           </ul>
           <button
               className="text-white bg-linear-to-r from-red-400 via-red-500 to-red-600 hover:bg-linear-to-br focus:ring-4 
@@ -53,8 +50,6 @@ const Navbar = () => {
             </button>
           </div>
         </nav>
-      </div>
-    </header>
   );
 };
 

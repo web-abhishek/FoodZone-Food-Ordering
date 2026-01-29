@@ -1,1 +1,5 @@
 @import "tailwindcss";
+
+.font-bevellier {
+font-family: 'Bevellier', sans-serif;
+}
