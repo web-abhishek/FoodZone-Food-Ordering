@@ -6,18 +6,16 @@ const ProductCard = ({ proList }) => {
     proList.info;
   return (
     <div className="p-6 w-88 bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
-      <div className="prod-img">
+      <div>
         <img src={CDN_URL + cloudinaryImageId} alt="product_image" className="rounded-lg" />
       </div>
       <div className="prod-details">
-        <div className="prod-info">
-          <div className="prod-name">{name}</div>
-          <div className="prod-rating">{avgRating}</div>
+        <div className="flex items-center justify-between mt-4 mb-2">
+          <div className="font-medium text-3xl">{name}</div>
+          <div className="font-base text-xl">Rating: {avgRating}</div>
         </div>
-        <div className="prod-cuisine-info">
-          <div className="prod-cuisine">{cuisines.join()}</div>
-          <div className="prod-price">{costForTwo}</div>
-        </div>
+        <div className="font-base text-xl mt-2 mb-2">{cuisines.join(", ")}</div>
+        <div className="font-base text-xl mt-2 mb-2">{costForTwo}</div>
       </div>
     </div>
   );

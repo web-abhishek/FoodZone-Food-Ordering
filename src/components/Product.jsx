@@ -55,15 +55,11 @@ const Product = () => {
         </div>
       </div>
 
-      <div className="product-main">
-        <div className="px-4">
-          <div className="flex flex-wrap gap-6">
+      <div className="flex flex-wrap gap-6 py-20">
             {filterProdList.map((items) => (
              <Link key={items.info.id} to={"/restaurants/" + items.info.id}> <ProductCard proList={items} /> </Link> 
             ))}
           </div>
-        </div>
-      </div>
     </div>
   );
 };
