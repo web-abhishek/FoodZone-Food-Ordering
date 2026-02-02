@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import foodzoneLogo from "../assets/foodzone-logo.png";
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
+
 const Navbar = () => {
   const [loginBtn, setLoginBtn] = useState("Login");
 
@@ -24,10 +25,7 @@ const Navbar = () => {
               <Link to="/about">About Us</Link>
             </li>
             <li className="p-3 hover:text-red-400 transition ease-in-out delay-100">
-              <Link to="/grocery">Groceries</Link>
-            </li>
-            <li className="p-3 hover:text-red-400 transition ease-in-out delay-100">
-              <Link to="/">Restaurants</Link>
+              <Link to="/products">Products</Link>
             </li>
             <li className="p-3 hover:text-red-400 transition ease-in-out delay-100">
               <Link to="/cart">Cart({cartItems.length} items)</Link>
