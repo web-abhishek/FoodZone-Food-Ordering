@@ -1,10 +1,8 @@
 @import "tailwindcss";
 
-
-
-/* Custom animations for food delivery */
 @keyframes float {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0px) rotate(0deg);
   }
   50% {
@@ -13,7 +11,8 @@
 }
 
 @keyframes float-delayed {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0px) rotate(0deg);
   }
   50% {
@@ -22,7 +21,8 @@
 }
 
 @keyframes bounce-gentle {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0);
   }
   50% {
@@ -37,8 +37,10 @@
 .animate-float-delayed {
   animation: float-delayed 5s ease-in-out infinite;
   animation-delay: 1s;
+  -webkit-animation: float-delayed 5s ease-in-out infinite;
 }
 
 .animate-bounce-gentle {
   animation: bounce-gentle 2s ease-in-out infinite;
+  -webkit-animation: bounce-gentle 2s ease-in-out infinite;
 }

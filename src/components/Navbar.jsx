@@ -15,7 +15,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className="w-full flex items-center justify-between py-4">
+    <nav className="w-full flex items-center justify-between py-4 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="logo">
             <Link to="/"><img src={foodzoneLogo} alt="" className="w-26 h-auto"/></Link>
           </div>

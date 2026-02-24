@@ -17,7 +17,7 @@ const Product = () => {
   return prodList.length === 0 ? (
     <Shimmer />
   ) : (
-    <div>
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
       <div className="flex justify-between mt-10 mb-5">
         <button
             className="cursor-pointer m-4 p-2 bg-green-700 text-white rounded-md"
@@ -55,7 +55,7 @@ const Product = () => {
         </div>
       </div>
 
-      <div className="flex flex-wrap gap-6 py-20">
+      <div className="flex flex-wrap gap-10 py-20">
             {filterProdList.map((items) => (
              <Link key={items.info.id} to={"/restaurants/" + items.info.id}> <ProductCard proList={items} /> </Link> 
             ))}
