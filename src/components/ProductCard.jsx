@@ -6,9 +6,9 @@ const ProductCard = ({ proList }) => {
   const { cloudinaryImageId, name, avgRating, cuisines, costForTwo } =
     proList.info;
 
-  if (!name || !cloudinaryImageId) {
-    return null;
-  }
+  // if (!name || !cloudinaryImageId) {
+  //   return null;
+  // }
 
   const cuisineList = Array.isArray(cuisines) ? cuisines : [];
 
