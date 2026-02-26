@@ -5,7 +5,13 @@ import { CDN_URL } from "../utils/constants";
 const ProductCard = ({ proList }) => {
   const { cloudinaryImageId, name, avgRating, cuisines, costForTwo } =
     proList.info;
-  
+
+  if (!name || !cloudinaryImageId) {
+    return null;
+  }
+
+  const cuisineList = Array.isArray(cuisines) ? cuisines : [];
+
   return (
     <div className="bg-white w-94 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105 group">
       <div className="relative h-56 overflow-hidden bg-gray-200">
@@ -27,7 +33,7 @@ const ProductCard = ({ proList }) => {
         <div className="flex items-start gap-2">
           <UtensilsCrossed className="w-5 h-5 text-red-500 shrink-0 mt-0.5" />
           <p className="text-sm text-gray-600 line-clamp-2">
-            {cuisines.join(", ")}
+            {cuisineList.length > 0 ? cuisineList.join(", ") : "No cuisines listed"}
           </p>
         </div>
 

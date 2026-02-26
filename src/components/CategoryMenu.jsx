@@ -1,5 +1,6 @@
 import { useDispatch } from "react-redux";
 import { addItem } from "../utils/CartSlice";
+import { FOOD_ITEM_CDN_URL } from "../utils/constants";
 import { Plus } from "lucide-react";
 
 const CategoryMenu = ({ items }) => {
@@ -24,7 +25,7 @@ const CategoryMenu = ({ items }) => {
             <div className="flex-shrink-0 w-24 h-24 rounded-lg overflow-hidden bg-gray-200">
               {imageId ? (
                 <img
-                  src={`https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/${imageId}`}
+                  src={`${FOOD_ITEM_CDN_URL}${imageId}`}
                   alt={name}
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                 />
