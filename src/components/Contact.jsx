@@ -36,7 +36,7 @@ const Contact = () => {
   
       <div className="max-w-6xl mx-auto mb-12">
         <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4 text-center">
-          Get in <span className="text-orange-500">Touch</span>
+          Get in <span className="text-red-500">Touch</span>
         </h1>
         <p className="text-lg text-gray-600 text-center max-w-2xl mx-auto">
           Have a question or feedback? We'd love to hear from you. Send us a message and we'll
@@ -49,7 +49,7 @@ const Contact = () => {
         <div className="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow duration-300">
           <div className="flex items-center mb-4">
             <div className="flex items-center justify-center w-12 h-12 bg-orange-100 rounded-lg">
-              <Mail className="w-6 h-6 text-orange-500" />
+              <Mail className="w-6 h-6 text-red-500" />
             </div>
             <h3 className="text-lg font-semibold text-gray-900 ml-3">Email</h3>
           </div>
@@ -60,7 +60,7 @@ const Contact = () => {
         <div className="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow duration-300">
           <div className="flex items-center mb-4">
             <div className="flex items-center justify-center w-12 h-12 bg-orange-100 rounded-lg">
-              <Phone className="w-6 h-6 text-orange-500" />
+              <Phone className="w-6 h-6 text-red-500" />
             </div>
             <h3 className="text-lg font-semibold text-gray-900 ml-3">Phone</h3>
           </div>
@@ -71,7 +71,7 @@ const Contact = () => {
         <div className="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow duration-300">
           <div className="flex items-center mb-4">
             <div className="flex items-center justify-center w-12 h-12 bg-orange-100 rounded-lg">
-              <MapPin className="w-6 h-6 text-orange-500" />
+              <MapPin className="w-6 h-6 text-red-500" />
             </div>
             <h3 className="text-lg font-semibold text-gray-900 ml-3">Location</h3>
           </div>
@@ -106,7 +106,7 @@ const Contact = () => {
                   value={formData.name}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent outline-none transition-all"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-transparent outline-none transition-all"
                   placeholder="John Doe"
                 />
               </div>
@@ -121,7 +121,7 @@ const Contact = () => {
                   value={formData.email}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent outline-none transition-all"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-transparent outline-none transition-all"
                   placeholder="john@example.com"
                 />
               </div>
@@ -138,7 +138,7 @@ const Contact = () => {
                 value={formData.subject}
                 onChange={handleChange}
                 required
-                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent outline-none transition-all"
+                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-transparent outline-none transition-all"
                 placeholder="How can we help?"
               />
             </div>
@@ -154,14 +154,14 @@ const Contact = () => {
                 onChange={handleChange}
                 required
                 rows="6"
-                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent outline-none transition-all resize-none"
+                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-transparent outline-none transition-all resize-none"
                 placeholder="Tell us your thoughts, questions, or feedback..."
               ></textarea>
             </div>
             <div className="flex justify-end pt-4">
               <button
                 type="submit"
-                className="inline-flex items-center px-8 py-3 bg-orange-500 text-white font-semibold rounded-lg hover:bg-orange-600 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
+                className="inline-flex items-center px-8 py-3 bg-red-500 text-white font-semibold rounded-lg hover:bg-red-500 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
               >
                 <Send className="w-5 h-5 mr-2" />
                 Send Message

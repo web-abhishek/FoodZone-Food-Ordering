@@ -118,19 +118,19 @@ const About = () => {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div className="text-center">
-              <p className="text-5xl font-bold text-orange-500 mb-2">50M+</p>
+              <p className="text-5xl font-bold text-red-500 mb-2">50M+</p>
               <p className="text-xl text-gray-300">Orders Delivered</p>
             </div>
             <div className="text-center">
-              <p className="text-5xl font-bold text-orange-500 mb-2">500+</p>
+              <p className="text-5xl font-bold text-red-500 mb-2">500+</p>
               <p className="text-xl text-gray-300">Partner Restaurants</p>
             </div>
             <div className="text-center">
-              <p className="text-5xl font-bold text-orange-500 mb-2">2M+</p>
+              <p className="text-5xl font-bold text-red-500 mb-2">2M+</p>
               <p className="text-xl text-gray-300">Active Users</p>
             </div>
             <div className="text-center">
-              <p className="text-5xl font-bold text-orange-500 mb-2">4.8★</p>
+              <p className="text-5xl font-bold text-red-500 mb-2">4.8★</p>
               <p className="text-xl text-gray-300">Customer Rating</p>
             </div>
           </div>

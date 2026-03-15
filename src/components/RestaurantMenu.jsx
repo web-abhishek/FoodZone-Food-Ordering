@@ -57,7 +57,7 @@ console.log(resMenu);
             </div>
             <span className="text-gray-600 text-sm">{costForTwo}</span>
             <span className="text-gray-600 text-sm flex items-center gap-1">
-              <Flame className="w-4 h-4 text-orange-500" />
+              <Flame className="w-4 h-4 text-red-500" />
               {cuisines.slice(0, 3).join(", ")}
             </span>
           </div>

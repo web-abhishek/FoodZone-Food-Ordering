@@ -65,19 +65,19 @@ const HeroBanner = () => {
               <div className="flex gap-3">
                 <Link
                   to="/contact"
-                  className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-orange-600 transition-colors duration-200"
+                  className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-red-500 transition-colors duration-200"
                 >
                   <Facebook className="w-5 h-5 text-white" />
                 </Link>
                 <Link
                   to="/contact"
-                  className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-orange-600 transition-colors duration-200"
+                  className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-red-500 transition-colors duration-200"
                 >
                   <Instagram className="w-5 h-5 text-white" />
                 </Link>
                 <Link
                   to="/contact"
-                  className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-orange-600 transition-colors duration-200"
+                  className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-red-500 transition-colors duration-200"
                 >
                   <Twitter className="w-5 h-5 text-white" />
                 </Link>

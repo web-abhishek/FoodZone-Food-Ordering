@@ -31,25 +31,25 @@ const Footer = () => {
             <div className="flex space-x-4 pt-2">
               <a
                 href="#"
-                className="p-2 bg-gray-800 hover:bg-orange-600 rounded-full transition-colors duration-200"
+                className="p-2 bg-gray-800 hover:bg-red-500 rounded-full transition-colors duration-200"
               >
                 <Facebook size={18} />
               </a>
               <a
                 href="#"
-                className="p-2 bg-gray-800 hover:bg-orange-600 rounded-full transition-colors duration-200"
+                className="p-2 bg-gray-800 hover:bg-red-500 rounded-full transition-colors duration-200"
               >
                 <Twitter size={18} />
               </a>
               <a
                 href="#"
-                className="p-2 bg-gray-800 hover:bg-orange-600 rounded-full transition-colors duration-200"
+                className="p-2 bg-gray-800 hover:bg-red-500 rounded-full transition-colors duration-200"
               >
                 <Instagram size={18} />
               </a>
               <a
                 href="#"
-                className="p-2 bg-gray-800 hover:bg-orange-600 rounded-full transition-colors duration-200"
+                className="p-2 bg-gray-800 hover:bg-red-500 rounded-full transition-colors duration-200"
               >
                 <Linkedin size={18} />
               </a>
@@ -62,31 +62,31 @@ const Footer = () => {
             <ul className="flex flex-col space-y-2">
               <Link
                 to="/"
-                className="hover:text-orange-500 transition-colors duration-200"
+                className="hover:text-red-500 transition-colors duration-200"
               >
                 Home
               </Link>
               <Link
                 to="/about"
-                className="hover:text-orange-500 transition-colors duration-200"
+                className="hover:text-red-500 transition-colors duration-200"
               >
                 About Us
               </Link>
               <Link
                 to="/products"
-                className="hover:text-orange-500 transition-colors duration-200"
+                className="hover:text-red-500 transition-colors duration-200"
               >
                 Products
               </Link>
               <Link
                 to="/cart"
-                className="hover:text-orange-500 transition-colors duration-200"
+                className="hover:text-red-500 transition-colors duration-200"
               >
                 Cart
               </Link>
               <Link
                 to="/contact"
-                className="hover:text-orange-500 transition-colors duration-200"
+                className="hover:text-red-500 transition-colors duration-200"
               >
                 Contact
               </Link>
@@ -98,7 +98,7 @@ const Footer = () => {
               <li>
                 <Link
                   to="/contact"
-                  className="hover:text-orange-500 transition-colors duration-200"
+                  className="hover:text-red-500 transition-colors duration-200"
                 >
                   FAQ
                 </Link>
@@ -106,7 +106,7 @@ const Footer = () => {
               <li>
                 <Link
                   to="/contact"
-                  className="hover:text-orange-500 transition-colors duration-200"
+                  className="hover:text-red-500 transition-colors duration-200"
                 >
                   Help Center
                 </Link>
@@ -114,7 +114,7 @@ const Footer = () => {
               <li>
                 <Link
                   to="/contact"
-                  className="hover:text-orange-500 transition-colors duration-200"
+                  className="hover:text-red-500 transition-colors duration-200"
                 >
                   Privacy Policy
                 </Link>
@@ -122,7 +122,7 @@ const Footer = () => {
               <li>
                 <Link
                   to="/contact"
-                  className="hover:text-orange-500 transition-colors duration-200"
+                  className="hover:text-red-500 transition-colors duration-200"
                 >
                   Terms & Conditions
                 </Link>
@@ -130,7 +130,7 @@ const Footer = () => {
               <li>
                 <Link
                   to="/contact"
-                  className="hover:text-orange-500 transition-colors duration-200"
+                  className="hover:text-red-500 transition-colors duration-200"
                 >
                   Feedback
                 </Link>
@@ -144,17 +144,17 @@ const Footer = () => {
             </h4>
             <ul className="space-y-3">
               <li className="flex items-center space-x-3">
-                <MapPin size={18} className="text-orange-500 shrink-0" />
+                <MapPin size={18} className="text-red-500 shrink-0" />
                 <span className="text-sm">
                   123 Food Street, Foodville, CV 12345
                 </span>
               </li>
               <li className="flex items-center space-x-3">
-                <Phone size={18} className="text-orange-500 shrink-0" />
+                <Phone size={18} className="text-red-500 shrink-0" />
                 <span className="text-sm">+1 (555) 123-4567</span>
               </li>
               <li className="flex items-center space-x-3">
-                <Mail size={18} className="text-orange-500 shrink-0" />
+                <Mail size={18} className="text-red-500 shrink-0" />
                 <span className="text-sm">support@foodzone.com</span>
               </li>
             </ul>
