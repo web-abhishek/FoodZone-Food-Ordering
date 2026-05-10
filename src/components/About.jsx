@@ -109,8 +109,6 @@ const About = () => {
           </div>
         </div>
       </section>
-
-      {/* Statistics */}
       <section className="py-16 bg-gray-900 text-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-4xl font-bold text-center mb-12">
@@ -164,13 +162,13 @@ const About = () => {
                 key={index}
                 className="bg-gray-50 p-8 rounded-lg shadow-md text-center hover:shadow-lg transition-shadow duration-300"
               >
-                <div className="w-24 h-24 bg-linear-to-br from-orange-400 to-red-500 rounded-full mx-auto mb-4 flex items-center justify-center text-white text-3xl font-bold">
+                <div className="w-24 h-24 bg-linear-to-br from-red-400 to-red-500 rounded-full mx-auto mb-4 flex items-center justify-center text-white text-3xl font-bold">
                   {member.name.charAt(0)}
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-2">
                   {member.name}
                 </h3>
-                <p className="text-orange-600 font-semibold mb-3">
+                <p className="text-red-600 font-semibold mb-3">
                   {member.role}
                 </p>
                 <p className="text-gray-600">{member.bio}</p>
@@ -180,15 +178,14 @@ const About = () => {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-16 bg-linear-to-r from-orange-600 to-red-500 text-white">
+      <section className="py-16 bg-linear-to-r bg-gray-50 text-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-4xl font-bold mb-6">Ready to Order?</h2>
-          <p className="text-xl text-gray-100 mb-8 max-w-2xl mx-auto">
+          <h2 className="text-4xl text-gray-900 font-bold mb-6">Ready to Order?</h2>
+          <p className="text-lg text-gray-700 mb-8 max-w-2xl mx-auto">
             Explore thousands of delicious meals from your favorite restaurants,
             available at your fingertips.
           </p>
-          <button className="bg-white text-orange-600 px-8 py-3 font-bold rounded-lg hover:bg-gray-100 transition-colors duration-200 text-lg">
+          <button className="bg-white text-red-600 px-8 py-3 font-bold rounded-lg hover:bg-gray-100 transition-colors duration-200 text-lg">
             Start Ordering Now
           </button>
         </div>

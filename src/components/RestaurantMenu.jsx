@@ -78,7 +78,7 @@ console.log(resMenu);
                 <p className="text-sm text-gray-600 font-medium mb-2">Cuisines</p>
                 <div className="flex flex-wrap gap-2">
                   {cuisines.map((cuisine) => (
-                    <span key={cuisine} className="bg-orange-100 text-orange-700 text-xs px-3 py-1 rounded-full">
+                    <span key={cuisine} className="bg-red-100 text-red-700 text-xs px-3 py-1 rounded-full">
                       {cuisine}
                     </span>
                   ))}

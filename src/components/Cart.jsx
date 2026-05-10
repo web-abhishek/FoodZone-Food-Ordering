@@ -21,13 +21,21 @@ const Cart = () => {
       <CategoryMenu items={cartItems} />
       <br></br>
       {cartItems.length !== 0 && (
-        <Button
-          size="lg"
-          onClick={handleClearCart}
-          className="mt-4 bg-red-500 text-white hover:bg-red-600 focus:ring-2 focus:ring-red-300 rounded text-center mx-auto block"
-        >
-          Clear Cart
-        </Button>
+        <div className="flex justify-center gap-4 mt-4">
+          <Button
+            size="lg"
+            onClick={handleClearCart}
+            className="bg-red-500 text-white hover:bg-red-600 focus:ring-2 focus:ring-red-300 rounded"
+          >
+            Clear Cart
+          </Button>
+          <Link
+            to="/checkout"
+            className="bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-600 focus:ring-2 focus:ring-blue-300 transition-colors"
+          >
+            Proceed to Checkout
+          </Link>
+        </div>
       )}
       {cartItems.length === 0 && (
         <div>

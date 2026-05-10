@@ -1,4 +1,3 @@
-import { Button } from "../components/UI/Button";
 import { Badge } from "../components/UI/Badge";
 import {
   Play,
@@ -45,22 +44,21 @@ const HeroBanner = () => {
               Home delivery and online reservation system for restaurants, cafe,
               medicine, food & groceries
             </p>
-
-            <Button
+            <Link
+              to="/products"
               size="lg"
               className="text-white bg-linear-to-r from-red-400 via-red-500 to-red-600 hover:bg-linear-to-br focus:ring-4 
               focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 shadow-lg shadow-red-500/50 dark:shadow-lg 
-              dark:shadow-red-800/80 font-medium rounded-full ml-0 text-lg py-3 text-center leading-5"
-            >
-              Order Now
-            </Button>
+              dark:shadow-red-800/80 font-medium rounded-full ml-0 text-lg p-3 text-center leading-5">
+              View Menu
+            </Link>
 
-            <div className="flex items-center gap-2 text-muted-foreground">
+            <div className="flex items-center gap-2 mt-9 text-muted-foreground">
               <span className="text-2xl">🛵</span>
               <span className="font-medium">Free delivery around 5 km</span>
             </div>
 
-            <div className="flex items-center gap-4 pt-4">
+            <div className="flex items-center gap-4 mt-2">
               <span className="text-sm text-muted-foreground">Follow us:</span>
               <div className="flex gap-3">
                 <Link

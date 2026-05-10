@@ -48,7 +48,7 @@ const Contact = () => {
         {/* Contact Information Cards */}
         <div className="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow duration-300">
           <div className="flex items-center mb-4">
-            <div className="flex items-center justify-center w-12 h-12 bg-orange-100 rounded-lg">
+            <div className="flex items-center justify-center w-12 h-12 bg-red-100 rounded-lg">
               <Mail className="w-6 h-6 text-red-500" />
             </div>
             <h3 className="text-lg font-semibold text-gray-900 ml-3">Email</h3>
@@ -59,7 +59,7 @@ const Contact = () => {
 
         <div className="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow duration-300">
           <div className="flex items-center mb-4">
-            <div className="flex items-center justify-center w-12 h-12 bg-orange-100 rounded-lg">
+            <div className="flex items-center justify-center w-12 h-12 bg-red-100 rounded-lg">
               <Phone className="w-6 h-6 text-red-500" />
             </div>
             <h3 className="text-lg font-semibold text-gray-900 ml-3">Phone</h3>
@@ -70,7 +70,7 @@ const Contact = () => {
 
         <div className="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow duration-300">
           <div className="flex items-center mb-4">
-            <div className="flex items-center justify-center w-12 h-12 bg-orange-100 rounded-lg">
+            <div className="flex items-center justify-center w-12 h-12 bg-red-100 rounded-lg">
               <MapPin className="w-6 h-6 text-red-500" />
             </div>
             <h3 className="text-lg font-semibold text-gray-900 ml-3">Location</h3>

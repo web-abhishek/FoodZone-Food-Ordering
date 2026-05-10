@@ -9,6 +9,7 @@ import Contact from "./components/Contact";
 import "./index.css";
 import RestaurantMenu from "./components/RestaurantMenu";
 import Cart from "./components/Cart";
+import Checkout from "./components/Checkout";
 import Index from "./components/Index";
 // import Grocery from "./components/Grocery";
 
@@ -46,6 +47,10 @@ const appRouter = createBrowserRouter([
       {
         path: "/cart",
         element: <Cart/>
+      },
+      {
+        path: "/checkout",
+        element: <Checkout />
       }
     ],
     errorElement: <Error />,
