@@ -10,10 +10,6 @@ const Product = () => {
 
   const [searchText, setSearchText] = useState("");
 
-  // if(prodList.length === 0){
-  //   return <Shimmer/>
-  // }
-
   return prodList.length === 0 ? (
     <Shimmer />
   ) : (

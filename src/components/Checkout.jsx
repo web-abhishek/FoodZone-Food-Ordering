@@ -32,7 +32,7 @@ const Checkout = () => {
                   className="bg-white rounded-lg p-4 border border-gray-200 shadow-md flex gap-4"
                 >
                   {/* Item Image */}
-                  <div className="flex-shrink-0 w-24 h-24 rounded-lg overflow-hidden bg-gray-200">
+                  <div className="shrink-0 w-24 h-24 rounded-lg overflow-hidden bg-gray-200">
                     {imageId ? (
                       <img
                         src={`${FOOD_ITEM_CDN_URL}${imageId}`}
@@ -46,7 +46,7 @@ const Checkout = () => {
                     )}
                   </div>
 
-                  <div className="flex-grow flex flex-col justify-between">
+                  <div className="grow flex flex-col justify-between">
                     <div>
                       <h4 className="font-semibold text-gray-900 text-base mb-1">{name}</h4>
                       <p className="text-gray-600 text-sm line-clamp-2">{description || "No description available"}</p>

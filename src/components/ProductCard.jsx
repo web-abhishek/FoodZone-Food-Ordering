@@ -1,14 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import { Star, UtensilsCrossed, IndianRupee } from "lucide-react";
 import { CDN_URL } from "../utils/constants";
+import fallbackImage from "../assets/fallback.jpg";
 
 const ProductCard = ({ proList }) => {
+  const [imageError, setImageError] = useState(false);
   const { cloudinaryImageId, name, avgRating, cuisines, costForTwo } =
     proList.info;
-
-  // if (!name || !cloudinaryImageId) {
-  //   return null;
-  // }
 
   const cuisineList = Array.isArray(cuisines) ? cuisines : [];
 
@@ -16,8 +14,9 @@ const ProductCard = ({ proList }) => {
     <div className="bg-white w-94 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105 group">
       <div className="relative h-56 overflow-hidden bg-gray-200">
         <img
-          src={CDN_URL + cloudinaryImageId}
+          src={!imageError && cloudinaryImageId ? CDN_URL + cloudinaryImageId : fallbackImage}
           alt={name}
+          onError={() => setImageError(true)}
           className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
         />
         <div className="absolute top-3 right-3 bg-linear-to-r from-green-500 to-green-600 text-white px-3 py-1 rounded-full flex items-center gap-1 shadow-lg">

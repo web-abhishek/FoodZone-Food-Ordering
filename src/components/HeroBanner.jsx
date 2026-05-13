@@ -1,12 +1,5 @@
 import { Badge } from "../components/UI/Badge";
-import {
-  Play,
-  Facebook,
-  Instagram,
-  Twitter,
-  Star,
-  CheckCircle,
-} from "lucide-react";
+import { Facebook, Instagram, Twitter, Star, CheckCircle } from "lucide-react";
 import { Avatar, AvatarFallback, AvatarImage } from "../components/UI/Avatar";
 import { Link } from "react-router-dom";
 
@@ -14,11 +7,10 @@ const HeroBanner = () => {
   return (
     <section className="relative h-[850] overflow-hidden bg-linear-to-br from-coral-light via-background to-background max-w-7xl mx-auto py-20 px-4 sm:px-6 lg:px-8">
       <div className="absolute inset-0 pointer-events-none">
-        
         <span className="absolute top-32 right-[15%] text-4xl animate-float-delayed">
           🍔
         </span>
-        
+
         <span className="absolute top-90 right-[10%] text-4xl animate-float">
           🍟
         </span>
@@ -27,17 +19,16 @@ const HeroBanner = () => {
         </span>
       </div>
 
-      <div className="container mx-auto px-4 pt-16 lg:pt-24">
+      <div className="container mx-auto px-4 pt-16">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-
           <div className="space-y-8 relative z-10">
-
             <Badge className="bg-primary/10 text-primary border-primary/20 px-4 py-2 text-sm font-medium hover:bg-primary/20">
               🍔 Super fast delivery
             </Badge>
 
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight">
-              Food delivery within <span className="text-primary">30 minutes</span>
+              Food delivery within{" "}
+              <span className="text-primary">30 minutes</span>
             </h1>
 
             <p className="text-lg text-muted-foreground max-w-xl">
@@ -49,7 +40,8 @@ const HeroBanner = () => {
               size="lg"
               className="text-white bg-linear-to-r from-red-400 via-red-500 to-red-600 hover:bg-linear-to-br focus:ring-4 
               focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 shadow-lg shadow-red-500/50 dark:shadow-lg 
-              dark:shadow-red-800/80 font-medium rounded-full ml-0 text-lg p-3 text-center leading-5">
+              dark:shadow-red-800/80 font-medium rounded-full ml-0 text-lg py-3 px-6 text-center leading-5"
+            >
               View Menu
             </Link>
 
@@ -109,7 +101,9 @@ const HeroBanner = () => {
                     <Star className="w-4 h-4 text-primary fill-primary" />
                     <span className="font-bold text-foreground">4.9</span>
                   </div>
-                  <span className="text-xs text-muted-foreground">(10.6K reviews)</span>
+                  <span className="text-xs text-muted-foreground">
+                    (10.6K reviews)
+                  </span>
                 </div>
               </div>
             </div>
