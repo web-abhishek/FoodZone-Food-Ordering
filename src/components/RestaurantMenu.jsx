@@ -40,10 +40,11 @@ const RestaurantsMenu = () => {
   }
 
   const { name, avgRating, costForTwo, cloudinaryImageId, cuisines } = restaurantInfo;
-console.log(resMenu);
+// console.log(resMenu);
   const categories = resMenu?.cards?.[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards.filter(
     (e) => e?.card?.card?.["@type"] === "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory"
   );
+  console.log(categories);
 
   return (
     <div className="min-h-screen bg-gray-50">
