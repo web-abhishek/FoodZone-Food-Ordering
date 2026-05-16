@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { REST_MENU_LIST, REST_MENU_LIST_IMG } from "../utils/constants";
-import Shimmer from "./Shimmer";
-import RestaurantCategory from "./RestaurantCategory";
+import Shimmer from "../components/Shimmer";
+import RestaurantCategory from "../components/RestaurantCategory";
 import { Star, MapPin, Flame } from "lucide-react";
-
+import { Link } from "react-router-dom";
 
 const RestaurantsMenu = () => {
   const [resMenu, setResMenu] = useState(null);
@@ -30,7 +30,7 @@ const RestaurantsMenu = () => {
   }
 
   const restaurantInfo = resMenu?.cards?.[2]?.card?.card?.info;
-
+// console.log(restaurantInfo);
   if (!restaurantInfo) {
     return (
       <div className="flex items-center justify-center h-screen text-xl text-gray-500">
@@ -44,7 +44,7 @@ const RestaurantsMenu = () => {
   const categories = resMenu?.cards?.[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards.filter(
     (e) => e?.card?.card?.["@type"] === "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory"
   );
-  console.log(categories);
+  // console.log(categories);
 
   return (
     <div className="min-h-screen bg-gray-50">
@@ -104,6 +104,13 @@ const RestaurantsMenu = () => {
                 <p className="text-gray-500 text-center py-8">No menu items available</p>
               )}
             </div>
+            <Link to="/cart">
+            <button className="text-white bg-linear-to-r from-red-400 via-red-500 to-red-600 hover:bg-linear-to-br focus:ring-4 
+              focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 shadow-lg shadow-red-500/50 dark:shadow-lg 
+              dark:shadow-red-800/80 font-medium text-xl rounded mt-10 px-20 py-3 text-center leading-5 cursor-pointer">
+              View Cart
+            </button>
+          </Link>
           </div>
         </div>
       </div>

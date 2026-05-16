@@ -1,5 +1,6 @@
 import { Heart, Zap, Users, Award, TrendingUp } from "lucide-react";
 import about from "../assets/about.jpg";
+import { Link } from "react-router-dom";
 const About = () => {
   return (
     <div className="min-h-screen bg-gray-50">
@@ -185,9 +186,13 @@ const About = () => {
             Explore thousands of delicious meals from your favorite restaurants,
             available at your fingertips.
           </p>
-          <button className="bg-white text-red-600 px-8 py-3 font-bold rounded-lg hover:bg-gray-100 transition-colors duration-200 text-lg">
-            Start Ordering Now
-          </button>
+          <Link to="/products">
+            <button className="text-white bg-linear-to-r from-red-400 via-red-500 to-red-600 hover:bg-linear-to-br focus:ring-4 
+              focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 shadow-lg shadow-red-500/50 dark:shadow-lg 
+              dark:shadow-red-800/80 font-medium rounded ml-10 text-lg px-6 py-3 text-center leading-5 cursor-pointer">
+              Start Ordering Now
+            </button>
+          </Link>
         </div>
       </section>
     </div>

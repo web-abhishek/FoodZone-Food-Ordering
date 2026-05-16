@@ -2,15 +2,19 @@ import React, { lazy, Suspense } from "react";
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import App from "./App";
-import Product from "./components/Product";
+import Product from "./pages/Product";
 import Error from "./components/Error";
-import About from "./components/About";
-import Contact from "./components/Contact";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
 import "./index.css";
-import RestaurantMenu from "./components/RestaurantMenu";
-import Cart from "./components/Cart";
-import Checkout from "./components/Checkout";
-import Index from "./components/Index";
+import RestaurantMenu from "./pages/RestaurantMenu";
+import Cart from "./pages/Cart";
+import Checkout from "./pages/Checkout";
+import ThankYou from "./pages/ThankYou";
+import Dashboard from "./pages/Dashboard";
+import SignIn from "./pages/SignIn";
+import SignUp from "./pages/SignUp";
+import Index from "./pages/Index";
 // import Grocery from "./components/Grocery";
 
 const Grocery = lazy(() => import("./components/Grocery"));
@@ -46,12 +50,28 @@ const appRouter = createBrowserRouter([
       },
       {
         path: "/cart",
-        element: <Cart/>
+        element: <Cart />,
       },
       {
         path: "/checkout",
-        element: <Checkout />
-      }
+        element: <Checkout />,
+      },
+      {
+        path: "/signin",
+        element: <SignIn />,
+      },
+      {
+        path: "/signup",
+        element: <SignUp />,
+      },
+      {
+        path: "/thank-you",
+        element: <ThankYou />,
+      },
+      {
+        path: "/dashboard",
+        element: <Dashboard />,
+      },
     ],
     errorElement: <Error />,
   },

@@ -9,11 +9,9 @@ import Footer from "./components/Footer";
 function App() {
   return (
     <Provider store={AppStore}>
-      {/* <div className="container mx-auto font-bevellier"> */}
         <Navbar />
         <Outlet />
         <Footer />
-      {/* </div> */}
     </Provider>
   );
 }

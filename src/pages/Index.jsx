@@ -1,5 +1,5 @@
-import HeroBanner from "./HeroBanner"
-import ServicesSection from "./ServiceSection";
+import HeroBanner from "../components/HeroBanner"
+import ServicesSection from "../components/ServiceSection";
 import Product from "./Product";
 
 const Index = () => {

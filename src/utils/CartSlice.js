@@ -28,8 +28,18 @@ const CartSlice = createSlice({
             state.items.push(action.payload);
             saveCartToStorage(state.items);
         },
-        removeItem:(state) =>{
-            state.items.pop();
+        removeItem:(state, action) =>{
+            const payload = action.payload;
+            if (typeof payload === "number") {
+                state.items.splice(payload, 1);
+            } else if (payload !== undefined) {
+                const index = state.items.findIndex(
+                    (item) => item.card?.info?.id === payload
+                );
+                if (index !== -1) state.items.splice(index, 1);
+            } else {
+                state.items.pop();
+            }
             saveCartToStorage(state.items);
         },
         clearCart:(state) =>{
