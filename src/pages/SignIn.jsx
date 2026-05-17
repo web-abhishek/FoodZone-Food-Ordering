@@ -11,8 +11,8 @@ const SignIn = () => {
   };
 
   return (
-    <div className="min-h-screen bg-linear-to-br from-slate-950 via-slate-900 to-indigo-950 text-white py-24 px-4 sm:px-6 lg:px-8">
-      <div className="mx-auto max-w-3xl overflow-hidden rounded-4xl border border-white/10 bg-slate-900/95 p-10 shadow-2xl shadow-indigo-950/40">
+    <div className="min-h-screen bg-gray-100 text-white py-24 px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-3xl overflow-hidden rounded-4xl border border-white/10 bg-red-500 p-10 shadow-2xl shadow-indigo-950/40">
         <div className="mb-8 text-center">
           <p className="text-sm uppercase tracking-[0.3em] text-cyan-300">Welcome back</p>
           <h1 className="mt-4 text-4xl font-semibold">Sign in to FoodZone</h1>
@@ -27,7 +27,7 @@ const SignIn = () => {
               value={credentials.email}
               onChange={(e) => setCredentials({ ...credentials, email: e.target.value })}
               required
-              className="mt-3 w-full rounded-3xl border border-slate-700 bg-slate-950 px-4 py-3 text-white outline-none transition focus:border-cyan-400 focus:ring-2 focus:ring-cyan-400/20"
+              className="mt-3 w-full rounded-3xl border border-slate-700 bg-gray-100 px-4 py-3 text-white outline-none transition focus:border-cyan-400 focus:ring-2 focus:ring-cyan-400/20"
               placeholder="you@example.com"
             />
           </div>
