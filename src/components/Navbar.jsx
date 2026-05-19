@@ -25,10 +25,7 @@ const Navbar = () => {
               <li className="rounded-full px-3 py-2 hover:text-red-400 transition ease-in-out delay-100">
                 <Link to="/contact">Contact Us</Link>
               </li>
-              <li className="rounded-full px-3 py-2 hover:text-red-400 transition ease-in-out delay-100">
-                <Link to="/signin">Sign In</Link>
-              </li>
-              <li className="rounded-full bg-red-500 px-4 py-2 text-white transition hover:bg-red-600">
+              <li className="shadow-lg shadow-black/30 rounded-full bg-red-500 px-4 py-2 text-white transition hover:bg-red-600">
                 <Link to="/signup">Sign Up</Link>
               </li>
             </ul>

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Dashboard = () => {
   return (
-    <div className="min-h-screen bg-slate-950 text-white py-24 px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen bg-gradient-to-br from-indigo-50 via-white to-emerald-50 text-white py-24 px-4 sm:px-6 lg:px-8">
       <div className="max-w-4xl mx-auto rounded-3xl border border-white/10 bg-slate-900/90 p-10 shadow-2xl shadow-slate-900/40">
         <div className="mb-8 text-center">
           <p className="text-sm uppercase tracking-[0.3em] text-cyan-300">Customer dashboard</p>

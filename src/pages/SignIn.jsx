@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
+import { FaRegUser } from "react-icons/fa";
 
 const SignIn = () => {
   const navigate = useNavigate();
@@ -11,42 +12,54 @@ const SignIn = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gray-100 text-white py-24 px-4 sm:px-6 lg:px-8">
-      <div className="mx-auto max-w-3xl overflow-hidden rounded-4xl border border-white/10 bg-red-500 p-10 shadow-2xl shadow-indigo-950/40">
-        <div className="mb-8 text-center">
-          <p className="text-sm uppercase tracking-[0.3em] text-cyan-300">Welcome back</p>
-          <h1 className="mt-4 text-4xl font-semibold">Sign in to FoodZone</h1>
-          <p className="mt-3 text-slate-400">Use the dummy login form to access the dashboard.</p>
+    <div className="min-h-screen bg-gradient-to-br from-indigo-50 via-white to-emerald-50 text-white pt-40 px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-xl rounded-4xl border border-white/10 bg-white p-6 shadow-2xl shadow-indigo-950/40">
+        
+        <div className="mb-8 text-center bg-red-500 shadow-xl shadow-gray-400 p-4 rounded-full w-20 h-20 mx-auto flex items-center justify-center text-2xl text-red-500 -my-16">
+          <FaRegUser className="text-white" />
         </div>
-
-        <form onSubmit={handleSubmit} className="space-y-6">
+        <div className="mb-8 text-center">
+          <p className="text-sm uppercase tracking-[0.3em] text-slate-500">Sign in to your account</p>
+          <h1 className="mt-4 text-4xl font-semibold text-slate-900">Welcome back to FoodZone</h1>
+          <p className="mt-3 text-slate-600">Please enter your details to sign in.</p>
+        </div>
+        <form onSubmit={handleSubmit} className="mx-auto max-w-md space-y-3">
           <div>
-            <label className="block text-sm font-medium text-slate-200">Email address</label>
+            
             <input
               type="email"
               value={credentials.email}
               onChange={(e) => setCredentials({ ...credentials, email: e.target.value })}
               required
-              className="mt-3 w-full rounded-3xl border border-slate-700 bg-gray-100 px-4 py-3 text-white outline-none transition focus:border-cyan-400 focus:ring-2 focus:ring-cyan-400/20"
-              placeholder="you@example.com"
+              className="text-sm w-full rounded-3xl bg-gray-200 px-4 py-4 text-gray-800 outline-none transition focus:border-red-500 focus:ring-2 focus:ring-red-500"
+              placeholder={
+                  <>
+                    <FaRegUser className="text-white" />
+                    {" Email address"}
+                  </>
+                }
             />
           </div>
 
           <div>
-            <label className="block text-sm font-medium text-slate-200">Password</label>
             <input
               type="password"
               value={credentials.password}
               onChange={(e) => setCredentials({ ...credentials, password: e.target.value })}
               required
-              className="mt-3 w-full rounded-3xl border border-slate-700 bg-slate-950 px-4 py-3 text-white outline-none transition focus:border-cyan-400 focus:ring-2 focus:ring-cyan-400/20"
-              placeholder="Enter your password"
+              className="text-sm w-full rounded-3xl bg-gray-200 px-4 py-4 text-gray-800 outline-none transition focus:border-red-500 focus:ring-2 focus:ring-red-500"
+              placeholder={
+                  <>
+                    <FaRegUser className="text-white" />
+                    {"Password"}
+                  </>
+                }
             />
           </div>
 
           <button
             type="submit"
-            className="w-full rounded-full bg-cyan-500 px-6 py-3 text-base font-semibold text-slate-950 transition hover:bg-cyan-400"
+            className="shadow-lg shadow-black/30 w-1/3 mx-auto block rounded-full bg-red-500 px-4 py-3 text-white transition hover:bg-red-600"
           >
             Sign In
           </button>
@@ -54,7 +67,7 @@ const SignIn = () => {
 
         <p className="mt-8 text-center text-sm text-slate-400">
           Don&apos;t have an account?{' '}
-          <Link to="/signup" className="font-semibold text-cyan-300 hover:text-white">
+          <Link to="/signup" className="font-semibold text-red-500 hover:text-red-800 transition ease-in-out delay-100">
             Create one now
           </Link>
         </p>

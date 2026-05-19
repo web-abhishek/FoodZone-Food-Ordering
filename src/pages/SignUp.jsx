@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
+import { FaRegUser } from "react-icons/fa";
 
 const SignUp = () => {
   const navigate = useNavigate();
@@ -11,8 +12,12 @@ const SignUp = () => {
   };
 
   return (
-    <div className="min-h-screen bg-linear-to-br from-slate-50 via-slate-100 to-slate-200 py-24 px-4 sm:px-6 lg:px-8">
-      <div className="mx-auto max-w-3xl overflow-hidden rounded-4xl border border-slate-200 bg-white p-10 shadow-2xl shadow-slate-300/40">
+    <div className="min-h-screen bg-gradient-to-br from-indigo-50 via-white to-emerald-50 py-24 px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-3xl rounded-4xl border border-slate-200 bg-white p-10 shadow-2xl shadow-slate-300/40">
+        <div className="mb-8 text-center bg-red-500 shadow-xl shadow-gray-400 p-4 rounded-full w-20 h-20 mx-auto flex 
+        items-center justify-center text-2xl text-red-500 -my-20">
+          <FaRegUser className="text-white" />
+        </div>
         <div className="mb-8 text-center">
           <p className="text-sm uppercase tracking-[0.3em] text-slate-500">Create new account</p>
           <h1 className="mt-4 text-4xl font-semibold text-slate-900">Sign up for FoodZone</h1>
@@ -21,58 +26,73 @@ const SignUp = () => {
 
         <form onSubmit={handleSubmit} className="space-y-6">
           <div>
-            <label className="block text-sm font-medium text-slate-700">Full name</label>
+            
             <input
               type="text"
               value={form.name}
               onChange={(e) => setForm({ ...form, name: e.target.value })}
               required
-              className="mt-3 w-full rounded-3xl border border-slate-300 bg-slate-50 px-4 py-3 text-slate-900 outline-none transition focus:border-indigo-500 focus:ring-2 focus:ring-indigo-500/20"
-              placeholder="John Doe"
+              className="text-sm w-full rounded-3xl bg-gray-200 px-4 py-4 text-gray-800 outline-none transition focus:border-red-500 focus:ring-2 focus:ring-red-500"
+                              placeholder={
+                                  <>
+                                    <FaRegUser className="text-white" />
+                                    {" Email address"}
+                                  </>
+                                }
             />
           </div>
 
           <div>
-            <label className="block text-sm font-medium text-slate-700">Email address</label>
+            
             <input
               type="email"
               value={form.email}
               onChange={(e) => setForm({ ...form, email: e.target.value })}
               required
-              className="mt-3 w-full rounded-3xl border border-slate-300 bg-slate-50 px-4 py-3 text-slate-900 outline-none transition focus:border-indigo-500 focus:ring-2 focus:ring-indigo-500/20"
-              placeholder="you@example.com"
+              className="text-sm w-full rounded-3xl bg-gray-200 px-4 py-4 text-gray-800 outline-none transition focus:border-red-500 focus:ring-2 focus:ring-red-500"
+                              placeholder={
+                                  <>
+                                    <FaRegUser className="text-white" />
+                                    {" Email address"}
+                                  </>
+                                }
             />
           </div>
 
           <div className="grid gap-6 sm:grid-cols-2">
-            <label className="block text-sm font-medium text-slate-700">
-              Phone number
+            
               <input
                 type="tel"
                 value={form.phone}
                 onChange={(e) => setForm({ ...form, phone: e.target.value })}
                 required
-                className="mt-3 w-full rounded-3xl border border-slate-300 bg-slate-50 px-4 py-3 text-slate-900 outline-none transition focus:border-indigo-500 focus:ring-2 focus:ring-indigo-500/20"
-                placeholder="+91 98765 43210"
+                className="text-sm w-full rounded-3xl bg-gray-200 px-4 py-4 text-gray-800 outline-none transition focus:border-red-500 focus:ring-2 focus:ring-red-500"
+                              placeholder={
+                                  <>
+                                    <FaRegUser className="text-white" />
+                                    {" Email address"}
+                                  </>
+                                }
               />
-            </label>
 
-            <label className="block text-sm font-medium text-slate-700">
-              Password
               <input
                 type="password"
                 value={form.password}
                 onChange={(e) => setForm({ ...form, password: e.target.value })}
                 required
-                className="mt-3 w-full rounded-3xl border border-slate-300 bg-slate-50 px-4 py-3 text-slate-900 outline-none transition focus:border-indigo-500 focus:ring-2 focus:ring-indigo-500/20"
-                placeholder="Create a password"
+                className="text-sm w-full rounded-3xl bg-gray-200 px-4 py-4 text-gray-800 outline-none transition focus:border-red-500 focus:ring-2 focus:ring-red-500"
+                              placeholder={
+                                  <>
+                                    <FaRegUser className="text-white" />
+                                    {" Email address"}
+                                  </>
+                                }
               />
-            </label>
           </div>
 
           <button
             type="submit"
-            className="w-full rounded-full bg-indigo-600 px-6 py-3 text-base font-semibold text-white transition hover:bg-indigo-700"
+            className="shadow-lg shadow-black/30 bg-red-500 hover:bg-red-600 px-4 py-3 text-white transition w-1/3 mx-auto block rounded-full"
           >
             Sign Up
           </button>
@@ -80,7 +100,7 @@ const SignUp = () => {
 
         <p className="mt-8 text-center text-sm text-slate-500">
           Already have an account?{' '}
-          <Link to="/signin" className="font-semibold text-indigo-600 hover:text-indigo-800">
+          <Link to="/signin" className="font-semibold text-red-500 hover:text-red-800">
             Sign in here
           </Link>
         </p>

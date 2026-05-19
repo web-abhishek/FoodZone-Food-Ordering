@@ -25,7 +25,7 @@ const ThankYou = () => {
           <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:justify-center">
             <Link
               to="/dashboard"
-              className="inline-flex items-center justify-center rounded-full bg-indigo-600 px-8 py-3 text-white text-sm font-semibold shadow-lg shadow-indigo-200/50 hover:bg-indigo-700 transition-colors"
+              className="inline-flex items-center justify-center rounded-full shadow-lg shadow-black/30 bg-red-500 hover:bg-red-600 px-8 py-3 text-white text-sm font-semibold transition-colors"
             >
               Go to Dashboard
             </Link>
