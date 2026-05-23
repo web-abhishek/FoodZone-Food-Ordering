@@ -12,7 +12,7 @@ const Dashboard = () => {
             Track your orders, explore food recommendations, and return to shopping anytime.
           </p>
         </div>
-        <div className="grid gap-6 sm:grid-cols-2">
+        <div className="grid gap-6 sm:grid-co`ls-2">
           <div className="rounded-3xl bg-slate-800/80 p-6 border border-white/10 shadow-inner">
             <h2 className="text-xl font-semibold text-white mb-3">Recent orders</h2>
             <p className="text-slate-400 leading-7">

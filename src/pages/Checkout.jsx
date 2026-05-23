@@ -68,7 +68,7 @@ const Checkout = () => {
   };
 
   return (
-    <div className="min-h-screen bg-slate-50 py-16 px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen bg-gradient-to-br from-indigo-50 via-white to-emerald-50 py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <div className="mb-10 text-center">
           <p className="text-sm text-indigo-600 uppercase tracking-[0.32em]">Checkout</p>
@@ -178,7 +178,7 @@ const Checkout = () => {
                 <button
                   type="button"
                   onClick={handlePlaceOrder}
-                  className="inline-flex w-full items-center justify-center rounded-full bg-indigo-600 px-8 py-4 text-base font-semibold text-white shadow-lg shadow-indigo-200/40 transition hover:bg-indigo-700"
+                  className="shadow-lg shadow-black/30 w-1/3 mx-auto block rounded-full bg-red-500 px-4 py-3 text-white transition hover:bg-red-600 w-full"
                 >
                   Place Order
                 </button>
