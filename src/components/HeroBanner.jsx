@@ -5,116 +5,120 @@ import { Link } from "react-router-dom";
 
 const HeroBanner = () => {
   return (
-    <section className="relative h-[850] overflow-hidden bg-linear-to-br from-coral-light via-background to-background max-w-7xl mx-auto py-20 px-4 sm:px-6 lg:px-8">
-      <div className="absolute inset-0 pointer-events-none">
-        <span className="absolute top-32 right-[15%] text-4xl animate-float-delayed">
-          🍔
-        </span>
-
-        <span className="absolute top-90 right-[10%] text-4xl animate-float">
-          🍟
-        </span>
-        <span className="absolute top-60 right-[30%] text-3xl animate-float-delayed">
-          🥤
-        </span>
+    <section className="relative overflow-hidden bg-linear-to-br from-red-50 via-white to-orange-50 py-16 sm:py-20">
+      <div className="pointer-events-none absolute inset-0 overflow-hidden">
+        <span className="absolute top-14 left-6 text-5xl opacity-70 animate-float">🍕</span>
+        <span className="absolute top-28 right-8 text-4xl opacity-80 animate-float-delayed">🍔</span>
+        <span className="absolute bottom-20 left-16 text-5xl opacity-60 animate-float">🥤</span>
+        <span className="absolute bottom-12 right-10 text-3xl opacity-70 animate-float-delayed">🍟</span>
       </div>
 
-      <div className="container mx-auto px-4 pt-16">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <div className="space-y-8 relative z-10">
-            <Badge className="bg-primary/10 text-primary border-primary/20 px-4 py-2 text-sm font-medium hover:bg-primary/20">
-              🍔 Super fast delivery
+      <div className="relative mx-auto flex w-full max-w-7xl flex-col gap-12 px-4 sm:px-6 lg:px-8">
+        <div className="grid items-center gap-10 lg:grid-cols-2">
+          <div className="space-y-6">
+            <Badge className="inline-flex items-center rounded-full bg-red-100 px-4 py-2 text-sm font-semibold text-red-700">
+              🍔 Express delivery in 30 min
             </Badge>
 
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight">
-              Food delivery within{" "}
-              <span className="text-primary">30 minutes</span>
-            </h1>
-
-            <p className="text-lg text-muted-foreground max-w-xl">
-              Home delivery and online reservation system for restaurants, cafe,
-              medicine, food & groceries
-            </p>
-            <Link
-              to="/products"
-              size="lg"
-              className="text-white bg-linear-to-r from-red-400 via-red-500 to-red-600 hover:bg-linear-to-br focus:ring-4 
-              focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 shadow-lg shadow-red-500/50 dark:shadow-lg 
-              dark:shadow-red-800/80 font-medium rounded-full ml-0 text-lg py-3 px-6 text-center leading-5"
-            >
-              View Menu
-            </Link>
-
-            <div className="flex items-center gap-2 mt-9 text-muted-foreground">
-              <span className="text-2xl">🛵</span>
-              <span className="font-medium">Free delivery around 5 km</span>
+            <div className="space-y-4">
+              <h1 className="text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl lg:text-6xl">
+                Delicious food <span className="text-red-500">delivered fast,</span> wherever you are.
+              </h1>
+              <p className="max-w-2xl text-base leading-7 text-slate-600 sm:text-lg">
+                Discover menus from top restaurants, place orders with ease, and enjoy warm meals at home. Perfect for busy days, family nights, and friendly gatherings.
+              </p>
             </div>
 
-            <div className="flex items-center gap-4 mt-2">
-              <span className="text-sm text-muted-foreground">Follow us:</span>
-              <div className="flex gap-3">
-                <Link
-                  to="/contact"
-                  className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-red-500 transition-colors duration-200"
-                >
-                  <Facebook className="w-5 h-5 text-white" />
-                </Link>
-                <Link
-                  to="/contact"
-                  className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-red-500 transition-colors duration-200"
-                >
-                  <Instagram className="w-5 h-5 text-white" />
-                </Link>
-                <Link
-                  to="/contact"
-                  className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-red-500 transition-colors duration-200"
-                >
-                  <Twitter className="w-5 h-5 text-white" />
-                </Link>
+            <div className="flex flex-col gap-4 sm:flex-row sm:items-center">
+              <Link
+                to="/products"
+                className="inline-flex items-center justify-center rounded-full bg-red-600 px-8 py-3 text-base font-semibold text-white transition hover:bg-red-700 focus:outline-none focus:ring-4 focus:ring-red-200"
+              >
+                View Menu
+              </Link>
+              <Link
+                to="/contact"
+                className="inline-flex items-center justify-center rounded-full border border-slate-200 bg-white px-8 py-3 text-base font-semibold text-slate-700 shadow-sm transition hover:border-red-300 hover:text-red-600"
+              >
+                Contact us
+              </Link>
+            </div>
+
+            <div className="grid gap-4 sm:grid-cols-2">
+              <div className="rounded-3xl border border-slate-200 bg-white/90 p-5 shadow-sm">
+                <p className="text-sm text-slate-500">Free delivery area</p>
+                <p className="mt-2 text-lg font-semibold text-slate-900">Within 5 km</p>
               </div>
+              <div className="rounded-3xl border border-slate-200 bg-white/90 p-5 shadow-sm">
+                <p className="text-sm text-slate-500">Customer rating</p>
+                <div className="mt-2 flex items-center gap-2 text-slate-900">
+                  <Star className="h-4 w-4 text-amber-400" />
+                  <span className="text-lg font-semibold">4.9/5</span>
+                </div>
+              </div>
+            </div>
+
+            <div className="flex items-center gap-3 text-sm text-slate-600">
+              <span className="text-2xl">🛵</span>
+              <span>Fast order tracking, secure checkout, and fresh meals every time.</span>
             </div>
           </div>
 
-          <div className="relative hidden lg:block">
-            <div className="absolute inset-0 flex items-center justify-center">
-              <div className="w-96 h-96 rounded-full bg-linear-to-br from-primary/20 to-accent/10 blur-3xl" />
-            </div>
-
-            <div className="absolute top-20 right-10 bg-card p-4 rounded-2xl shadow-xl border border-border animate-bounce-gentle z-20">
-              <div className="flex items-center gap-3">
-                <div className="flex -space-x-2">
-                  <Avatar className="w-8 h-8 border-2 border-card">
-                    <AvatarImage src="https://i.pravatar.cc/100?img=1" />
-                    <AvatarFallback>U1</AvatarFallback>
-                  </Avatar>
-                  <Avatar className="w-8 h-8 border-2 border-card">
-                    <AvatarImage src="https://i.pravatar.cc/100?img=2" />
-                    <AvatarFallback>U2</AvatarFallback>
-                  </Avatar>
-                  <Avatar className="w-8 h-8 border-2 border-card">
-                    <AvatarImage src="https://i.pravatar.cc/100?img=3" />
-                    <AvatarFallback>U3</AvatarFallback>
-                  </Avatar>
-                </div>
-                <div>
-                  <div className="flex items-center gap-1">
-                    <Star className="w-4 h-4 text-primary fill-primary" />
-                    <span className="font-bold text-foreground">4.9</span>
+          <div className="relative overflow-hidden rounded-4xl border border-slate-200 bg-white/90 p-6 shadow-xl shadow-slate-200/50 sm:p-8">
+            <div className="absolute inset-x-0 top-0 h-40 bg-linear-to-br from-red-200 via-transparent to-transparent opacity-80" />
+            <div className="relative grid gap-6">
+              <div className="flex flex-col gap-4 rounded-4xl bg-slate-950/95 p-6 text-white shadow-2xl">
+                <div className="flex items-center justify-between">
+                  <div>
+                    <p className="text-sm uppercase tracking-[0.24em] text-slate-300">Chef’s choice</p>
+                    <p className="mt-2 text-2xl font-bold">Fiery Burger Deluxe</p>
                   </div>
-                  <span className="text-xs text-muted-foreground">
-                    (10.6K reviews)
-                  </span>
+                  <div className="rounded-3xl bg-white/10 px-3 py-2 text-sm font-semibold text-emerald-200">Hot</div>
+                </div>
+                <p className="text-sm text-slate-300">Juicy beef, cheddar cheese, fresh lettuce, and secret sauce.</p>
+                <div className="flex flex-wrap gap-2 text-sm text-slate-300">
+                  <span className="rounded-full bg-white/10 px-3 py-1">Burger</span>
+                  <span className="rounded-full bg-white/10 px-3 py-1">Fast Food</span>
+                  <span className="rounded-full bg-white/10 px-3 py-1">Popular</span>
                 </div>
               </div>
-            </div>
 
-            <div className="absolute bottom-32 left-10 bg-accent text-accent-foreground px-5 py-3 rounded-full shadow-xl flex items-center gap-2 animate-float z-20">
-              <CheckCircle className="w-5 h-5" />
-              <span className="font-semibold">Confirm Order</span>
-            </div>
+              <div className="grid gap-4 sm:grid-cols-2">
+                <div className="rounded-3xl border border-slate-200 bg-white p-4 text-slate-900 shadow-sm">
+                  <p className="text-sm text-slate-500">Trusted by</p>
+                  <div className="mt-4 flex items-center gap-2">
+                    <Avatar className="h-10 w-10 border border-slate-200">
+                      <AvatarImage src="https://i.pravatar.cc/100?img=1" />
+                      <AvatarFallback>U1</AvatarFallback>
+                    </Avatar>
+                    <Avatar className="h-10 w-10 border border-slate-200">
+                      <AvatarImage src="https://i.pravatar.cc/100?img=2" />
+                      <AvatarFallback>U2</AvatarFallback>
+                    </Avatar>
+                    <Avatar className="h-10 w-10 border border-slate-200">
+                      <AvatarImage src="https://i.pravatar.cc/100?img=3" />
+                      <AvatarFallback>U3</AvatarFallback>
+                    </Avatar>
+                  </div>
+                </div>
+                <div className="rounded-3xl border border-slate-200 bg-white p-4 text-slate-900 shadow-sm">
+                  <p className="text-sm text-slate-500">Secure checkout</p>
+                  <div className="mt-4 flex items-center gap-2">
+                    <CheckCircle className="h-5 w-5 text-emerald-500" />
+                    <span className="font-semibold text-slate-900">Safe & simple</span>
+                  </div>
+                </div>
+              </div>
 
-            <div className="relative z-10 flex items-center justify-center h-full min-h-125">
-              <div className="text-[200px] animate-float">🍔</div>
+              <div className="rounded-4xl border border-slate-200 bg-linear-to-r from-red-500 to-orange-400 p-4 text-white shadow-lg shadow-red-300/30">
+                <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+                  <div>
+                    <p className="text-sm uppercase tracking-[0.24em]">Order with confidence</p>
+                    <p className="mt-2 text-xl font-bold">Live delivery updates</p>
+                  </div>
+                  <div className="rounded-full bg-white/20 px-4 py-3 text-sm font-semibold">Start now</div>
+                </div>
+              </div>
             </div>
           </div>
         </div>

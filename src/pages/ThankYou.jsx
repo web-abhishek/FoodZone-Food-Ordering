@@ -6,9 +6,9 @@ const ThankYou = () => {
   const { orderId, customerName, total } = location.state || {};
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-indigo-50 via-white to-emerald-50 py-24 px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen bg-linear-to-br from-indigo-50 via-white to-emerald-50 py-24 px-4 sm:px-6 lg:px-8">
       <div className="max-w-3xl mx-auto bg-white/90 backdrop-blur rounded-3xl shadow-2xl border border-indigo-100 overflow-hidden">
-        <div className="p-10 text-center">
+        <div className="p-8 sm:p-10 text-center">
           <div className="mx-auto mb-6 flex h-20 w-20 items-center justify-center rounded-full bg-green-100 text-green-700">
             <span className="text-4xl">✅</span>
           </div>

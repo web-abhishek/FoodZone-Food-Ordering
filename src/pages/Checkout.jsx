@@ -68,7 +68,7 @@ const Checkout = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-indigo-50 via-white to-emerald-50 py-16 px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen bg-linear-to-br from-indigo-50 via-white to-emerald-50 py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <div className="mb-10 text-center">
           <p className="text-sm text-indigo-600 uppercase tracking-[0.32em]">Checkout</p>
@@ -90,7 +90,7 @@ const Checkout = () => {
             </Link>
           </div>
         ) : (
-          <div className="grid gap-8 xl:grid-cols-[1.4fr_1fr]">
+          <div className="grid gap-8 grid-cols-1 lg:grid-cols-2 xl:grid-cols-[1.4fr_1fr]">
             <section className="space-y-8 rounded-4xl border border-slate-200 bg-white p-8 shadow-lg shadow-slate-200/50">
               <div>
                 <h2 className="text-2xl font-semibold text-slate-900">Customer details</h2>
@@ -178,14 +178,14 @@ const Checkout = () => {
                 <button
                   type="button"
                   onClick={handlePlaceOrder}
-                  className="shadow-lg shadow-black/30 w-1/3 mx-auto block rounded-full bg-red-500 px-4 py-3 text-white transition hover:bg-red-600 w-full"
+                  className="shadow-lg shadow-black/30 w-full sm:w-1/3 mx-auto block rounded-full bg-red-500 px-4 py-3 text-white transition hover:bg-red-600"
                 >
                   Place Order
                 </button>
               </div>
             </section>
 
-            <aside className="space-y-6 rounded-4xl border border-slate-200 bg-slate-950/95 p-6 text-slate-100 shadow-xl shadow-slate-300/10">
+            <aside className="space-y-6 rounded-4xl border border-slate-200 bg-slate-950/95 p-6 text-slate-100 shadow-xl shadow-slate-300/10 lg:sticky lg:top-24">
               <div>
                 <div className="mb-4 flex items-center justify-between">
                   <div>

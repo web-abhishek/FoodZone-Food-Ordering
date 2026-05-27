@@ -44,7 +44,7 @@ const Contact = () => {
         </p>
       </div>
 
-      <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">
+      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
         {/* Contact Information Cards */}
         <div className="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow duration-300">
           <div className="flex items-center mb-4">
@@ -158,10 +158,10 @@ const Contact = () => {
                 placeholder="Tell us your thoughts, questions, or feedback..."
               ></textarea>
             </div>
-            <div className="flex justify-end pt-4">
+            <div className="flex justify-center sm:justify-end pt-4">
               <button
                 type="submit"
-                className="inline-flex items-center px-8 py-3 bg-red-500 text-white font-semibold rounded-lg hover:bg-red-500 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
+                className="w-full sm:w-auto inline-flex items-center justify-center px-8 py-3 bg-red-500 text-white font-semibold rounded-lg hover:bg-red-600 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
               >
                 <Send className="w-5 h-5 mr-2" />
                 Send Message

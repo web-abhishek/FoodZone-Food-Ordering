@@ -26,22 +26,22 @@ const Dashboard = () => {
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 mb-8">
           <div className="rounded-3xl bg-slate-800/90 p-6 border border-white/10 shadow-inner">
             <p className="text-sm uppercase tracking-[0.3em] text-cyan-300">Total orders</p>
-            <p className="mt-4 text-4xl font-semibold text-white">12</p>
+            <p className="mt-4 text-3xl md:text-4xl font-semibold text-white">12</p>
             <p className="mt-3 text-slate-400">Your recent food cravings delivered right to your door.</p>
           </div>
           <div className="rounded-3xl bg-slate-800/90 p-6 border border-white/10 shadow-inner">
             <p className="text-sm uppercase tracking-[0.3em] text-emerald-300">Favorites</p>
-            <p className="mt-4 text-4xl font-semibold text-white">8</p>
+            <p className="mt-4 text-3xl md:text-4xl font-semibold text-white">8</p>
             <p className="mt-3 text-slate-400">Saved meals and restaurants for quick reorders.</p>
           </div>
           <div className="rounded-3xl bg-slate-800/90 p-6 border border-white/10 shadow-inner">
             <p className="text-sm uppercase tracking-[0.3em] text-violet-300">Saved addresses</p>
-            <p className="mt-4 text-4xl font-semibold text-white">3</p>
+            <p className="mt-4 text-3xl md:text-4xl font-semibold text-white">3</p>
             <p className="mt-3 text-slate-400">Pickup and delivery locations ready when you are.</p>
           </div>
         </div>
 
-        <div className="grid gap-6 lg:grid-cols-[1.2fr_0.8fr]">
+        <div className="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-[1.2fr_0.8fr]">
           <div className="rounded-4xl bg-slate-800/90 p-8 border border-white/10 shadow-inner">
             <div className="flex items-center justify-between gap-4 mb-6">
               <div>
@@ -81,7 +81,7 @@ const Dashboard = () => {
             </div>
           </div>
 
-          <div className="rounded-4xl bg-slate-800/90 p-8 border border-white/10 shadow-inner">
+          <div className="rounded-4xl bg-slate-800/90 p-8 border border-white/10 shadow-inner lg:sticky lg:top-24">
             <div className="mb-6">
               <h2 className="text-2xl font-semibold text-white">Quick actions</h2>
               <p className="mt-2 text-slate-400">Jump straight to the things you do most.</p>

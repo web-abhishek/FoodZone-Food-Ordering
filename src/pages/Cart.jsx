@@ -31,26 +31,26 @@ const Cart = () => {
   return (
     <div className="min-h-screen bg-slate-50 px-4 sm:px-6 lg:px-8 py-20">
       <div className="max-w-7xl mx-auto">
-        <div className="mb-10 flex flex-col gap-6 rounded-4xl border border-slate-200 bg-white p-8 shadow-xl sm:flex-row sm:items-end sm:justify-between">
+        <div className="mb-10 flex flex-col gap-6 rounded-4xl border border-slate-200 bg-white p-6 sm:p-8 shadow-xl sm:flex-row sm:items-end sm:justify-between">
           <div>
             <h1 className="text-4xl font-bold text-slate-900">Your Favourite Cart</h1>
             <p className="mt-3 text-slate-600 max-w-2xl">
               Review your selected food items, remove anything you don't want, or continue to the checkout page.
             </p>
           </div>
-          <div className="flex flex-wrap gap-3 justify-center">
+          <div className="flex w-full flex-col items-stretch gap-3 sm:flex-row sm:w-auto sm:items-center sm:justify-center">
             {cartItems.length !== 0 && (
               <>
                 <Button
                   size="lg"
                   onClick={handleClearCart}
-                  className="bg-red-500 text-white hover:bg-red-600 focus:ring-2 focus:ring-red-300 rounded"
+                  className="w-full sm:w-auto bg-red-500 text-white hover:bg-red-600 focus:ring-2 focus:ring-red-300 rounded"
                 >
                   Clear Cart
                 </Button>
                 <Link
                   to="/checkout"
-                  className="inline-flex items-center justify-center rounded-full bg-blue-500 px-6 py-3 text-white hover:bg-blue-600 focus:ring-2 focus:ring-blue-300 transition-colors"
+                  className="w-full sm:w-auto inline-flex items-center justify-center rounded-full bg-blue-500 px-6 py-3 text-white hover:bg-blue-600 focus:ring-2 focus:ring-blue-300 transition-colors text-center"
                 >
                   Proceed to Checkout
                 </Link>
@@ -71,12 +71,12 @@ const Cart = () => {
             </Link>
           </div>
         ) : (
-          <div className="grid gap-8 xl:grid-cols-[1.65fr_0.95fr]">
+          <div className="grid gap-8 grid-cols-1 lg:grid-cols-2 xl:grid-cols-[1.65fr_0.95fr]">
             <section className="space-y-4">
               <CategoryMenu items={cartItems} isCart onRemove={handleRemoveItem} />
             </section>
 
-            <aside className="rounded-3xl border border-slate-200 bg-white p-8 shadow-xl">
+            <aside className="rounded-3xl border border-slate-200 bg-white p-6 sm:p-8 shadow-xl lg:sticky lg:top-24">
               <h2 className="text-2xl font-semibold text-slate-900">Order summary</h2>
               <p className="mt-2 text-slate-500">One final review before checkout.</p>
               <div className="mt-8 space-y-4">
