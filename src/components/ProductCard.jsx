@@ -11,7 +11,7 @@ const ProductCard = ({ proList }) => {
   const cuisineList = Array.isArray(cuisines) ? cuisines : [];
 
   return (
-    <div className="bg-white w-94 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105 group">
+    <div className="bg-white w-full rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105 group">
       <div className="relative h-56 overflow-hidden bg-gray-200">
         <img
           src={!imageError && cloudinaryImageId ? CDN_URL + cloudinaryImageId : fallbackImage}
